@@ -74,33 +74,30 @@ public class MainActivity extends AppCompatActivity {
                         i1.putExtra("Name",Value);
                         startActivity(i1);
                         break;
-                    case R.id.button2:
-                        Intent i2=new Intent(MainActivity.this, ListOptionActivity.class);
+                    case R.id.button7:
+                        Intent i2=new Intent(MainActivity.this, OpzioniActivity.class);
                         i2.putExtra("Id", "id123456789Show");
                         startActivity(i2);
                         break;
                     case R.id.button3:
-                        Intent i3=new Intent(MainActivity.this, FriendsActivity.class);
+                        Intent i3=new Intent(MainActivity.this, HomeActivity.class);
                         i3.putExtra("Id", "id123456789Friends");
                         startActivity(i3);
                         break;
                     case R.id.button4:
-                        Intent i4=new Intent(MainActivity.this, MarketActivity.class);
+                        Intent i4=new Intent(MainActivity.this, TendenzeActivity.class);
                         startActivity(i4);
                         break;
                     case R.id.button5:
-                        Intent i5=new Intent(MainActivity.this, NotificationsActivity.class);
-                        i5.putExtra("Id", "id123456789Market");
+                        Intent i5=new Intent(MainActivity.this, IscrizioniActivity.class);
                         startActivity(i5);
                         break;
                     case R.id.button6:
-                        Intent i6=new Intent(MainActivity.this, NotificationsActivity.class);
-                        i6.putExtra("Id", "id123456789Market");
+                        Intent i6=new Intent(MainActivity.this, AttivitaActivity.class);
                         startActivity(i6);
                         break;
-                    case R.id.button7:
-                        Intent i7=new Intent(MainActivity.this, NotificationsActivity.class);
-                        i7.putExtra("Id", "id123456789Market");
+                    case R.id.button2:
+                        Intent i7=new Intent(MainActivity.this, RaccoltaActivity.class);
                         startActivity(i7);
                         break;
                 }
@@ -125,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> av, View v, int pos, long id) {
-                Intent i = new Intent(MainActivity.this, StuffActivity.class);
+                Intent i = new Intent(MainActivity.this, ItemListActivity.class);
                 i.putExtra("Item", stuff[pos]);
                 startActivity(i);
             }
