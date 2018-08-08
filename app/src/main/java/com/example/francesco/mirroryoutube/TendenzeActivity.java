@@ -75,12 +75,10 @@ public class TendenzeActivity extends AppCompatActivity {
                         break;
                     case R.id.button7:
                         Intent i2=new Intent(TendenzeActivity.this, OpzioniActivity.class);
-                        i2.putExtra("Id", "id123456789Show");
                         startActivity(i2);
                         break;
                     case R.id.button3:
                         Intent i3=new Intent(TendenzeActivity.this, HomeActivity.class);
-                        i3.putExtra("Id", "id123456789Friends");
                         startActivity(i3);
                         break;
                     case R.id.button4:

@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import java.io.IOException;
+
 import com.example.francesco.mirroryoutube.Network.OkHttpProvider;
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -13,7 +15,6 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
-import java.io.IOException;
 
 public class SearchActivity extends AppCompatActivity {
 
@@ -23,18 +24,10 @@ public class SearchActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
-        Intent i= getIntent();
-        String value = i.getStringExtra("Name");
-        TextView title = findViewById(R.id.textView4);
-        String finaValue= value + "'s Videos";
-        title.setText(finaValue);
 
 
         handler = new Handler(getMainLooper());
         getUrl();
-
-
-
 
     }
 
@@ -68,7 +61,5 @@ public class SearchActivity extends AppCompatActivity {
 
     }
 
-
-
-
 }
+
