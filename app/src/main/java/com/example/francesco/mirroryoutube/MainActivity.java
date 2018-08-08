@@ -15,9 +15,8 @@ import android.widget.ListView;
 public class MainActivity extends AppCompatActivity {
 
     private Button butSear,butOpti,butHome,butTend,butIscr,butAtti,butRacc;
-    private EditText et;
     private String Value;
-
+    private EditText et;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
         butTend = findViewById(R.id.button4);
         butIscr = findViewById(R.id.button5);
         butAtti = findViewById(R.id.button6);
-        butRacc = findViewById(R.id.button7);
+        butRacc = findViewById(R.id.button2);
 
-        EditText et = (EditText) findViewById(R.id.editText);
+         EditText et = (EditText) findViewById(R.id.editText);
 
         butSear.setEnabled(false); // set button disable initially
 
@@ -115,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         ListView listView = (ListView) findViewById(R.id.listview);
-        final String[] stuff = new String[]{"ItemHome1", "ItemHome2", "ItemHome3", "ItemHome4", "ItemHome5", "ItemHome6"};
+        final String[] stuff = new String[]{"ItemMain1", "ItemMain2", "ItemMain3", "ItemMain4", "ItemMain5", "ItemMain6"};
         ArrayAdapter<String> arrayAdapter =
                 new ArrayAdapter<String>(this, R.layout.row, R.id.textViewList, stuff);
         listView.setAdapter(arrayAdapter);
